@@ -36,8 +36,8 @@ This will do the following:
 ### 3. Running the server
 Once the setup is complete, the server will automatically start. You can access the web panel at:
 
-    ```
-http://localhost:8080
+     http://localhost:8080
+
 
 # Usage
 # Adding a Video

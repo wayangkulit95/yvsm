@@ -15,11 +15,9 @@ Before you begin, ensure that you have the following installed on your machine:
 
 ### 1. Clone the repository:
 
-     bash
+     curl -O https://raw.githubusercontent.com/wayangkulit95/yvsm/refs/heads/main/setup.sh
 
 
-git clone https://github.com/your-repo-name/video-stream-manager.git
-cd video-stream-manager
 
 ## 2. Run the setup script:
 The setup.sh script will install all the necessary dependencies and set up the environment for you. It will also create the SQLite3 database.

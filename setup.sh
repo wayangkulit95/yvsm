@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Update package list
 echo "Updating package list..."
 sudo apt-get update -y
@@ -25,13 +24,17 @@ else
     echo "FFmpeg is already installed."
 fi
 
-# Install dependencies for the Node.js project
-echo "Installing Node.js dependencies..."
-if [ ! -d "node_modules" ]; then
-    npm install
+# Check if package.json exists, if not, create it with default values
+if [ ! -f "package.json" ]; then
+    echo "Creating package.json file..."
+    npm init -y
 else
-    echo "Node.js dependencies are already installed."
+    echo "package.json already exists."
 fi
+
+# Install required Node.js dependencies
+echo "Installing required Node.js dependencies..."
+npm install express http-proxy-middleware
 
 # Check if the `streams` directory exists, if not, create it
 if [ ! -d "streams" ]; then
@@ -40,10 +43,6 @@ if [ ! -d "streams" ]; then
 else
     echo "'streams' directory already exists."
 fi
-
-# Install http-proxy-middleware (if it's not already installed)
-echo "Ensuring http-proxy-middleware is installed..."
-npm install http-proxy-middleware
 
 # Success message
 echo "Setup is complete! You can now start the server with 'node app.js'."

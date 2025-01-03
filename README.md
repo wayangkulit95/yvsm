@@ -1,4 +1,3 @@
-"""
 # YouTube Video Stream Manager
 
 This is a simple web application for managing and streaming YouTube videos (live streams). It allows you to add YouTube video IDs and stream them using `yt-dlp` for extraction and streaming in M3U8 format.
@@ -16,7 +15,8 @@ Before you begin, ensure that you have the following installed on your machine:
 
 ### 1. Clone the repository:
 
-    ```bash
+    ```
+bash
 
 git clone https://github.com/your-repo-name/video-stream-manager.git
 cd video-stream-manager
@@ -24,8 +24,9 @@ cd video-stream-manager
 ## 2. Run the setup script:
 The setup.sh script will install all the necessary dependencies and set up the environment for you. It will also create the SQLite3 database.
 
-    ```chmod +x setup.sh
-       ./setup.sh
+    ```
+chmod +x setup.sh
+./setup.sh
  
 This will do the following:
 
@@ -37,7 +38,8 @@ This will do the following:
 ### 3. Running the server
 Once the setup is complete, the server will automatically start. You can access the web panel at:
 
-    ```http://localhost:8080
+    ```
+http://localhost:8080
 
 # Usage
 # Adding a Video
@@ -61,7 +63,7 @@ To develop or modify the application, you can make changes to the following file
 - public/: Static files such as CSS and client-side JS.
 - After making changes, you can restart the server with:
   ```
-  npm start
+npm start
 
 # License
 This project is licensed under the MIT License 

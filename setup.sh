@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Ensure the script is being run as a non-root user with sudo access
-if [ "$(id -u)" -eq 0 ]; then
-    echo "This script should not be run as root. Please run it as a regular user."
-    exit 1
-fi
 
 # Update package list
 echo "Updating package list..."

@@ -21,9 +21,9 @@ Before you begin, ensure that you have the following installed on your machine:
 
 ## 2. Run the setup script:
 The setup.sh script will install all the necessary dependencies and set up the environment for you. It will also create the SQLite3 database.
-
-chmod +x setup.sh
-./setup.sh
+    ```
+     chmod +x setup.sh
+     ./setup.sh
  
 This will do the following:
 

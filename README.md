@@ -15,7 +15,7 @@ Before you begin, ensure that you have the following installed on your machine:
 
 ### 1. Clone the repository:
 
-    ``` bash
+     bash
 
 
 git clone https://github.com/your-repo-name/video-stream-manager.git
